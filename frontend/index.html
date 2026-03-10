@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Denoising AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Audio Denoise AI ✨</h1>
+            <p>Upload your noisy audio and our deep learning model will enhance it.</p>
+        </header>
+
+        <main class="glass-panel">
+            <div class="upload-section" id="drop-zone">
+                <input type="file" id="audio-input" accept="audio/*" hidden>
+                <label for="audio-input" class="upload-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="17 8 12 3 7 8" />
+                        <line x1="12" y1="3" x2="12" y2="15" />
+                    </svg>
+                    Choose Noisy Audio File
+                </label>
+                <div id="file-name" class="file-name">No file selected</div>
+            </div>
+
+            <div class="action-section">
+                <button id="denoise-btn" class="primary-btn" disabled>
+                    <span class="btn-text">Denoise Audio</span>
+                    <div class="loader hidden" id="btn-loader"></div>
+                </button>
+            </div>
+
+            <div class="result-section hidden" id="result-section">
+                <h3>Denoising Complete! ✨</h3>
+
+                <div class="audio-players">
+                    <div class="player-card">
+                        <span class="badge red">Noisy (Original)</span>
+                        <audio id="noisy-player" controls preload="metadata"></audio>
+                    </div>
+
+                    <div class="player-card">
+                        <span class="badge green">Cleaned (Enhanced)</span>
+                        <audio id="clean-player" controls preload="metadata"></audio>
+                    </div>
+                </div>
+
+                <div class="visualizations">
+                    <div class="vis-card">
+                        <h4>Waveform Comparison</h4>
+                        <img id="waveform-img" src="" alt="Waveform Comparison" class="vis-img hidden" />
+                    </div>
+                    <div class="vis-card">
+                        <h4>Spectrogram Comparison</h4>
+                        <img id="spectrogram-img" src="" alt="Spectrogram Comparison" class="vis-img hidden" />
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with PyTorch & Flask</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
