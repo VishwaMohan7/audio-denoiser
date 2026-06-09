@@ -1,0 +1,38 @@
+VISVESVARAYA TECHNOLOGICAL UNIVERSITY
+JNANASANGAMA, BELAGAVI – 590018
+Subject: Deep Learning				Code: 23AML161
+ACTIVITY REPORT
+on
+<TITLE> 
+Submitted in partial fulfillment for the award of degree of
+Bachelor of Engineering
+in
+Artificial Intelligence and Machine Learning
+Submitted by
+<Name > [<USN>]
+<Name > [<USN>]
+B.N.M. Institute of Technology
+An Autonomous Institution under VTU 
+Department of Artificial Intelligence and Machine Learning
+2025-2026
+Table of Contents
+List of Figures
+List of Tables
+Abstract:
+Write a summary of the entire article.
+Introduction:
+Provide the background, state the problem statement, and outline the objectives to achieve.
+Literature Review:
+Analyze the summarize existing research relevant to the topic.
+Mapping to United Nations’ Sustainable Development Goals:
+Mention all the UN SDGs that the activity could potentially be mapped to and fill the below table appropriately. 
+Methodology:
+Provide details of methods, procedures, and resources including datasets, frameworks, libraries used in this work in such a way so that the same work can be replicated.
+Results:
+Provide the details of data collection (if applicable) and result in an appropriate format, preferably using tables and figures, with relevant metrics to assess the quality of the work.
+Discussion:
+Explain the meaning of the results and discuss their significance.
+Conclusion:
+Summarize the key findings and their implications.
+References/Bibliography:
+List all sources cited in the paper according to a specific style.

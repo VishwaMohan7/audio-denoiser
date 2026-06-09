@@ -1,13 +1,20 @@
-# Python
+# Python cache and bytecode
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+
+# Virtual environments
+venv/
+.venv/
 env/
+ENV/
+
+# Packaging/build artifacts
 build/
-develop-eggs/
 dist/
+develop-eggs/
 downloads/
 eggs/
 .eggs/
@@ -21,21 +28,17 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-.venv/
-venv/
-ENV/
+# Logs and local environment
+*.log
+.env
 
-# Data and Models
-dataset/
-data/uploads/
-data/outputs/
-models/*.pth
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# OS generated files
+# OS files
 .DS_Store
 .DS_Store?
 ._*
@@ -44,12 +47,22 @@ models/*.pth
 ehthumbs.db
 Thumbs.db
 
-# Flask
+# Notebook artifacts
+.ipynb_checkpoints/
+
+# Flask artifacts
 instance/
 .webassets-cache
 
-# IDEs
-.idea/
-.vscode/
-*.swp
-*.swo
+# Project data and generated artifacts
+data/
+outputs/
+models/checkpoints/
+
+# Large model/audio artifacts
+*.pth
+*.pt
+*.wav
+
+# Keep gitignore itself tracked
+!.gitignore
